@@ -25,6 +25,7 @@ let foodT= parseint(math.random()* (max-min) +min)
     console.log ("Ganaste juega de nuevo")
 
  }
+ alert(hola)
 
 
  
