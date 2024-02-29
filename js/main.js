@@ -1,31 +1,19 @@
-// Juego 
+let alumno= prompt("ingrese su nombre")
+let calificaciones= Number (prompt("ingrese su calificaciones"))
 
+if (calificaciones >=10){
+    console.log("Bienvenido su seccion es la A")
+}else if( calificaciones <=5 ){
+    console.log("Bienvenido a la seccion B")
+};
 
- 
- let snake=20;
- let food=20;
- let round=0;
+function saludar(){
+    alert(" Bienvenido recoger los horarios esta semana")
+};
+ saludar();
 
-while(snake >0 && food >0){
-    round=round+1; round +=1;
-     console.log ("snake"+ snake)
-     console.log ("food"+ food)
-    console.log ("---round---"+ round)
+for(let i=0; i<5; i+=1 ){
+   console.log("llena formulario");
 
-} 
-const MIN= 10;
-const MAX= 20;
+};
 
-let velocidad=parseint (math.random ()* (Imax-min) + min)
-let foodT= parseint(math.random()* (max-min) +min)
- if(food > snake){
-    console.log("Perdise intenta de nuevo")
-
- }else if (snake => food){
-    console.log ("Ganaste juega de nuevo")
-
- }
- alert(hola)
-
-
- 
