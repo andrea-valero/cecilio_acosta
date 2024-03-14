@@ -1,4 +1,4 @@
-let alumno= prompt("ingrese su nombre")
+let alumno= prompt ("ingrese su nombre")
 let calificaciones= Number (prompt("ingrese su calificaciones"))
 
 if (calificaciones >=10){
@@ -16,4 +16,8 @@ for(let i=0; i<5; i+=1 ){
    console.log("llena formulario");
 
 };
+
+ 
+ 
+
 
