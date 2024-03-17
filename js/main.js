@@ -17,7 +17,24 @@ for(let i=0; i<5; i+=1 ){
 
 };
 
- 
- 
+let cuotas ={
+    matricula:100000,
+    colegiatura:200000,
+    tiempodepago: "trimestral",
 
+   
+ }
+ console.table (cuotas)
+
+ const primerosMeses=["enero","febrero","marzo"];
+  console.log ( primerosMeses)
+  
+const calcular20porciento= numero=> numero * 0.8;
+ const matricula=100000;
+ const resultado=calcular20porciento(matricula);
+ console.log(resultado);
+
+
+
+ 
 

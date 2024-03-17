@@ -9,7 +9,8 @@ header{
   
 a{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+
     align-items: center;
     text-decoration: none;
    color:white ;
