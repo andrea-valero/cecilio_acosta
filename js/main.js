@@ -28,13 +28,33 @@ let cuotas ={
 
  const primerosMeses=["enero","febrero","marzo"];
   console.log ( primerosMeses)
-  
+  console.log(typeof primerosMeses)
+  primerosMeses.push("abril");
+  primerosMeses.map
+ 
+
+
+  let codigo= Number(prompt("ingrese su codigo de descuento"))
+   
+  if (codigo ===245){
+
+    console.log("Codigo correcto")
+  }
+    
+
+
+ 
+
+
 const calcular20porciento= numero=> numero * 0.8;
- const matricula=100000;
- const resultado=calcular20porciento(matricula);
- console.log(resultado);
+const matricula=100000;
+const resultado=calcular20porciento(matricula);
+console.log(resultado);
 
+let inscripcion= [1,2,3,4]
 
+let dobleinscripcion= inscripcion.map(num =>num *2)
+console.log(dobleinscripcion)
 
  
 
