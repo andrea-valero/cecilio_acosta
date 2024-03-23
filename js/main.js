@@ -56,5 +56,15 @@ let inscripcion= [1,2,3,4]
 let dobleinscripcion= inscripcion.map(num =>num *2)
 console.log(dobleinscripcion)
 
+const btn= document.querySelector('#btn');
+btn.onclick=function(){
+    alert(resultado)
+}
+
+
+
+
+
+
  
 
