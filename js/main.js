@@ -2,9 +2,9 @@ let alumno= prompt ("ingrese su nombre")
 let calificaciones= Number (prompt("ingrese su calificaciones"))
 
 if (calificaciones >=10){
-    console.log("Bienvenido su seccion es la A")
+    alert("Bienvenido su seccion es la A")
 }else if( calificaciones <=5 ){
-    console.log("Bienvenido a la seccion B")
+    alert("Bienvenido a la seccion B")
 };
 
 function saludar(){
@@ -32,7 +32,7 @@ let cuotas ={
   primerosMeses.push("abril");
   primerosMeses.map
  
-
+// Codigo de descuento
 
   let codigo= Number(prompt("ingrese su codigo de descuento"))
    
@@ -45,21 +45,44 @@ let cuotas ={
 
  
 
-
+// Descuento 20
 const calcular20porciento= numero=> numero * 0.8;
 const matricula=100000;
 const resultado=calcular20porciento(matricula);
 console.log(resultado);
+
+//inscripciones
 
 let inscripcion= [1,2,3,4]
 
 let dobleinscripcion= inscripcion.map(num =>num *2)
 console.log(dobleinscripcion)
 
-const btn= document.querySelector('#btn');
-btn.onclick=function(){
+
+
+//agregar las materias
+
+
+const btn=document.querySelector('#btn');
+ const materias=document.querySelector('#materias');
+  btn.onclick=function(){
+    materias.innerHTML="Materias agregadas";
+  }
+
+  const button=document.getElementById("pagar")
+   button.onclick=function(){
     alert(resultado)
-}
+   }
+
+
+  
+ 
+
+
+
+
+
+ 
 
 
 

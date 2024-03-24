@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Base de datos/home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Domine:wght@400..700&family=Josefin+Sans:wght@300&family=Kalnia&family=Playball&family=Playfair+Display:ital,wght@1,500&family=Ubuntu:ital,wght@0,400;0,500;1,300;1,400&family=Young+Serif&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -17,24 +20,23 @@
       <img src="./imagenes/portada.jpg" alt="">
         <div>
         <p>Descuento 20% Coloca 245</p>
-        </div>
 
-        <h1> Escoge 4 materias</h2>
-   <ul>
-    <li>Matematicas <input type="checkbox" name="" id="M"></li>
-    <li>Quimica <input type="checkbox" name="" id="Q"></li>
-    <li>Fisica <input type="checkbox" name="" id="F"></li>
-    <li>Castellano <input type="checkbox" name="" id="C"></li>
-    <li>Deporte <input type="checkbox" name="" id="D"></li>
-    <li>Infomartica <input type="checkbox" name="" id="Inf"></li>
-    <li>Ingles <input type="checkbox" name="" id="in"></li>
-  
-  
-   </ul>
-   <div id="azul"></div>
-   
-      <button id="btn">Pagar</button>
-      
+        <h1> Selecciona 4 materias</h2>
+        
+            <input type="checkbox" name="materia" value="Matematicas" >Matematicas <br>
+            <input type="checkbox" name="materia" value="ciencia">Ciencia<br>
+            <input type="checkbox" name="materia" value="fisica">Fisica<br>
+            <input type="checkbox" name="materia" value="deporte">Deporte<br>
+            <input type="checkbox" name="materia" value="Quimica">Quimica<br>
+            <input type="checkbox" name=" materia" value="Biologia">Biologia<br>
+            <input type="checkbox" name="materia" evalue="Literatura">Literatura<br>
+         <button id="btn">Agregar</button>
+          
+          <div id="materias"></div>
+
+          <button id="pagar"> pagar</button>
+
+              
       <footer>
         <p>Gracias</p>
       </footer>
