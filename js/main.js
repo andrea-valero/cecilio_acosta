@@ -34,13 +34,9 @@ let cuotas ={
  
 // Codigo de descuento
 
-  let codigo= Number(prompt("ingrese su codigo de descuento"))
-   
-  if (codigo ===245){
 
-    console.log("Codigo correcto")
-  }
-    
+let codigo= Number(prompt("ingrese su codigo de descuento"))
+
 
 
  
@@ -50,6 +46,7 @@ const calcular20porciento= numero=> numero * 0.8;
 const matricula=100000;
 const resultado=calcular20porciento(matricula);
 console.log(resultado);
+
 
 //inscripciones
 
@@ -69,10 +66,16 @@ const btn=document.querySelector('#btn');
     materias.innerHTML="Materias agregadas";
   }
 
-  const button=document.getElementById("pagar")
+let error=[]
+
+
+   const button=document.getElementById("pagar")
    button.onclick=function(){
     alert(resultado)
    }
+
+   
+  
 
 
   
