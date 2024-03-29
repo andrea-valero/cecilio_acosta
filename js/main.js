@@ -1,11 +1,11 @@
-let alumno= prompt ("ingrese su nombre")
-let calificaciones= Number (prompt("ingrese su calificaciones"))
+const  usario ={
+  nombre:"juan",
+  asignacion:12
+}
+const asignacion = (usario.asignacion >= 10)? true:false
 
-if (calificaciones >=10){
-    alert("Bienvenido su seccion es la A")
-}else if( calificaciones <=5 ){
-    alert("Bienvenido a la seccion B")
-};
+asignacion? alert ("seccion A"): alert ("seccion B")
+
 
 function saludar(){
     alert(" Bienvenido recoger los horarios esta semana")
@@ -25,12 +25,15 @@ let cuotas ={
    
  }
  console.table (cuotas)
+ // semestre
 
- const primerosMeses=["enero","febrero","marzo"];
-  console.log ( primerosMeses)
-  console.log(typeof primerosMeses)
-  primerosMeses.push("abril");
-  primerosMeses.map
+ const meses1=["Enero", "Febrero","marzo"]
+ const meses2=["Abril","Mayo","Junio"]
+ const semestre=[...meses1, ...meses2 ]
+  console.log ( semestre)
+  console.log(typeof semestre)
+  semestre.push("Julio");
+  semestre.map
  
 // Codigo de descuento
 
