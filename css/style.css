@@ -94,4 +94,12 @@ label {
   font-family: "Domine", serif;
 }
 
+button {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
