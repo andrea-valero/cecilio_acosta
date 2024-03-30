@@ -59,7 +59,7 @@ const btn=document.querySelector('#btn');
    document.getElementById('formulario').addEventListener('submit', function(event) {
     event.preventDefault();
     
-let numerodetarjeta  = document.getElementById('numerodetarjeta').value;
+    let numerodetarjeta= document.getElementById('numerodetarjeta').value;
     let vencimieto = document.getElementById('vencimiento').value;
     let cvv = document.getElementById('cvv').value;
    let titular = document.getElementById('titular').value;
@@ -96,6 +96,7 @@ let numerodetarjeta  = document.getElementById('numerodetarjeta').value;
    })
    
   }
+  
 
 
   

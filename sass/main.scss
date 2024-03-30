@@ -2,7 +2,7 @@ h1{
    display: flex;
    justify-content:center ;
    align-items: center;
-   font-size: 50px;
+   font-size: 20px;
    font-family: "Domine", serif;
 }
 img{
@@ -40,13 +40,28 @@ input{
    flex-direction: row;
    justify-content: center;
    align-items: center;
-   padding-top: 20px;
+   padding-top: 10px;
+   
 }
 h2{
    display: flex;
    justify-content: center;
    align-items: center;
+   font-family: "Domine", serif;
+   font-size: 20px;
 }
  div{
    margin: 70px;
+ }
+ h3{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: "Domine", serif;
+   font-size: 20px
+
+ }
+ label{
+   font-family: "Domine", serif;
+
  }
