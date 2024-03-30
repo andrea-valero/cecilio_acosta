@@ -37,19 +37,22 @@
           <div id="materias"></div>
 
           <h2>Datos Personales</h2>
-          <div clas=" formulario">
-            <p>Nombre</p>
-            <input type="Nombre beneficiario" class="formulario">
-            <p>Apellido</p>
-            <input type="text" name="" id="">
-            <p> Numero de tarjeta</p>
+        
+          <form id="payment-form">
+            <label for="nummerodetarejta">Número de Tarjeta:</label>
+            <input type="text" id="nummerodetarejta" maxlength="16" required>
             
-            <input type="tarjeta "class="formulario">
-            <p>Cvv</p>
-            <input type="cvv" class="formulario">
-
-            <button id="pagar">pagar</button>
-          </div>
+            <label for="Vencimiento">Fecha de Vencimiento (MM/AA):</label>
+            <input type="text" id="Vencimiento" maxlength="5" required>
+            
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" maxlength="4" required>
+            
+            <label for="Titular">Nombre del Titular:</label>
+            <input type="text" id="titular" required>
+            
+            <button type="submit">Pagar</button>
+          </form>
 
           
               

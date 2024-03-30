@@ -38,7 +38,6 @@ let cuotas ={
 // Codigo de descuento
 
 
-let codigo= Number(prompt("ingrese su codigo de descuento"))
 
 
 
@@ -69,13 +68,19 @@ const btn=document.querySelector('#btn');
     materias.innerHTML="Materias agregadas";
   }
 
-let error=[]
-
 
    const button=document.getElementById("pagar")
    button.onclick=function(){
     alert(resultado)
    }
+   document.getElementById('formulario').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+let numerodetarjeta  = document.getElementById('numerodetarjeta').value;
+    let vencimieto = document.getElementById('vencimiento').value;
+    let cvv = document.getElementById('cvv').value;
+   let titular = document.getElementById('titular').value;
+   })
 
    
   
