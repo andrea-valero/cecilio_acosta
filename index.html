@@ -7,8 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
 <link rel="shortcut icon" href="./imagenes/logo.png" type="image/x-icon">
-<script src="./js/main.js" defer></script>
+
+<script src="./js/main.js" defer> resultadoDiv.innerHTML += <p>${estudiante.nombre}: ${estudiante.seccion}</p></script>
  
 <link rel="stylesheet" href="./css/style.css">
 
@@ -31,6 +33,7 @@
             <label for="calificacion">Calificación:</label>
             <input type="number" id="calificacion" required>
             <button type="submit">Agregar Estudiante</button>
+            
         </form>
         <div id="resultado"></div>
 
@@ -51,7 +54,7 @@
         
           <form id="payment-form">
             <label for="nummerodetarejta">Número de Tarjeta:</label>
-            <input type="text" id="nummerodetarejta" maxlength="16" required>
+            <input type="text" id="numerodetarejta" maxlength="16" required>
             
             <label for="Vencimiento">Fecha de Vencimiento (MM/AA):</label>
             <input type="text" id="Vencimiento" maxlength="5" required>

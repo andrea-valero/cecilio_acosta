@@ -1,5 +1,7 @@
    // formato usario
 
+
+
    let estudiantes = [];
 
    document.getElementById('formulario').addEventListener('submit', function(event) {
@@ -22,24 +24,36 @@
     });
 }
 
-   function mostrarResultado() {
-       let resultadoDiv = document.getElementById('resultado');
-       resultadoDiv.innerHTML = '';
-       estudiantes.forEach(estudiante => {
-          resultadoDiv.innerHTML = estudiante.seccion 
-   })
+
+
+
+
+function mostrarResultado() {
+    let resultadoDiv = document.getElementById('resultado');
+    resultadoDiv.innerHTML = '';
+    estudiantes.forEach(estudiante => {
+        resultadoDiv.innerHTML = estudiante.seccion
+    });
+}
+   mostrarResultado();
    
-  }
-   let estudiantesJOSN=JSON.stringify(estudiantes);
-   localStorage.setItem( "estudiantes1",estudiantesJOSN);
+  
+const estudiantesGuardados = localStorage.getItem('estudiantes');
 
 
+if (estudiantesGuardados) {
+ 
+  const estudiantes = JSON.parse(estudiantesGuardados);
 
+  
+  console.log(estudiantes);
+} else {
+  console.log('No hay datos de estudiantes guardados en localStorage.');
+}
 
-function saludar(){
-    alert(" Bienvenido recoger los horarios esta semana")
-};
- saludar();
+    
+
+ 
 
 for(let i=0; i<5; i+=1 ){
    console.log("llena formulario")
@@ -93,28 +107,12 @@ const btn=document.querySelector('#btn');
 
 
  
-   document.getElementById('formulario').addEventListener('submit', function(event) {
+ 
+  document.getElementById('formulario').addEventListener('submit', function(event) {
     event.preventDefault();
     
     let numerodetarjeta= document.getElementById('numerodetarjeta').value;
     let vencimieto = document.getElementById('vencimiento').value;
     let cvv = document.getElementById('cvv').value;
    let titular = document.getElementById('titular').value;
-   })
-
-  
- 
-
-
-
-
-
- 
-
-
-
-
-
-
- 
-
+   });
