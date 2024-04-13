@@ -116,3 +116,6 @@ const btn=document.querySelector('#btn');
     let cvv = document.getElementById('cvv').value;
    let titular = document.getElementById('titular').value;
    });
+
+   //libreria
+   Swal.fire("Bienvenidos");
