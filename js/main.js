@@ -35,7 +35,7 @@ function mostrarResultado() {
         resultadoDiv.innerHTML = estudiante.seccion
     });
 }
-   mostrarResultado();
+   mostrarResultado()
    
   
 const estudiantesGuardados = localStorage.getItem('estudiantes');
@@ -102,13 +102,18 @@ console.log(dobleinscripcion)
 const btn=document.querySelector('#btn');
  const materias=document.querySelector('#materias');
   btn.onclick=function(){
-    materias.innerHTML="Materias agregadas";
-  }
+  materias.innerHTML="Materias agregadas";
+}
+ setTimeout(function(click,btn){
+
+  materias.innerHTML="Pasa por tu horario"
+
+ },7000)
 
 
  
  
-  document.getElementById('formulario').addEventListener('submit', function(event) {
+  document.getElementById('formulario').addEventListener('paga', function(event) {
     event.preventDefault();
     
     let numerodetarjeta= document.getElementById('numerodetarjeta').value;
@@ -118,4 +123,17 @@ const btn=document.querySelector('#btn');
    });
 
    //libreria
-   Swal.fire("Bienvenidos");
+   Swal.fire("Bienvenido");
+    
+   
+   
+ 
+   fetch("alumnos.json")
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Error al obtener los datos de los alumnos:', error);
+  });
+   
