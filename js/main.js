@@ -24,6 +24,25 @@ let estudiantes = [];
 
 
 
+ const meses1=["Enero", "Febrero","marzo"]
+ const meses2=["Abril","Mayo","Junio"]
+ const semestre=[...meses1, ...meses2 ]
+  console.log ( semestre)
+  console.log(typeof semestre)
+  semestre.push("Julio");
+  semestre.map
+ 
+ 
+
+
+//inscripciones
+
+let inscripcion= [1,2,3,4]
+
+let dobleinscripcion= inscripcion.map(num =>num *2)
+console.log(dobleinscripcion)
+
+
 
 
 function mostrarResultado() {
@@ -57,5 +76,6 @@ const btn=document.querySelector('#btn');
     mostrarDatosEnPagina(alumno.json);
   })
   .catch(error => {
+
     console.log('Hubo un error');
   });
