@@ -25,6 +25,7 @@
     "lru-cache": "^6.0.0",
     "minimatch": "^3.1.2",
     "ms": "^2.1.2",
+    "node": "^18.20.2",
     "nodemon": "^3.1.0",
     "nopt": "^1.0.10",
     "normalize-path": "^3.0.0",
@@ -41,7 +42,6 @@
     "undefsafe": "^2.0.5",
     "yallist": "^4.0.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

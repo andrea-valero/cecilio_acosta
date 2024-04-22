@@ -50,27 +50,12 @@ const btn=document.querySelector('#btn');
  Swal.fire("Bienvenido a nuestra pagina");
  
 
+
  fetch('../data/alumno.json')
   .then(response => response.json())
   .then(data => {
     mostrarDatosEnPagina(alumno.json);
   })
   .catch(error => {
-    datoscolegio.innerHTML('Hubo un error');
+    console.log('Hubo un error');
   });
-
-function mostrarDatosEnPagina(data) {
-  const datosColegioElement = document.getElementById('datosColegio');
-  
-  
-  
-  const listaEstudiantes = document.createElement('ul');
-  data.forEach(estudiante => {
-    const listItem = document.createElement('li');
-    listItem.textContent = "${estudiante.nombre} - ${estudiante.edad}";
-    listaEstudiantes.appendChild(listItem);
-  });
-  
-  // Añadir la lista al elemento en la página
-  datosColegioElement.appendChild(listaEstudiantes);
-}
